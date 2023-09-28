@@ -777,8 +777,8 @@ class NumpyOutputter(BaseOutputter):
 
     if has_numpy:
         default_converters = [convert_numpy(int),
-                              convert_numpy(numpy.float),
-                              convert_numpy(numpy.str)]
+                              convert_numpy(float),
+                              convert_numpy(str)]
 
     def __call__(self, cols):
         self._convert_vals(cols)
