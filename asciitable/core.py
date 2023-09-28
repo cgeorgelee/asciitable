@@ -776,7 +776,7 @@ class NumpyOutputter(BaseOutputter):
     default_masked_array = False
 
     if has_numpy:
-        default_converters = [convert_numpy(numpy.int),
+        default_converters = [convert_numpy(int),
                               convert_numpy(numpy.float),
                               convert_numpy(numpy.str)]
 
